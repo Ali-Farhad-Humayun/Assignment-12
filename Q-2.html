@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q-2 and A-2</title>
+    <style>
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: center;
+        }
+        
+        .gallery img {
+            width: 30%;
+            height: auto;
+        }
+        
+        @media (max-width: 800px) {
+            .gallery img {
+                width: 45%;
+            }
+        }
+        
+        @media (max-width: 500px) {
+            .gallery img {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="gallery">
+        <img src="1059-200x300.jpg" alt="Placeholder 1">
+        <img src="1059-200x300.jpg" alt="Placeholder 2">
+        <img src="1059-200x300.jpg" alt="Placeholder 3">
+    </div>
+</body>
+</html>

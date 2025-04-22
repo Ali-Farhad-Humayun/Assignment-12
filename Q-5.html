@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q-5 and A-5</title>
+    <style>
+    /* Base styles for all screen sizes */
+    .container {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+    } 
+    .main-content {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        padding: 20px;
+        flex: 1;
+    }
+    /* Box1 styling*/
+    .box1 {
+        background-color: black;
+        color: white;
+        padding: 20px;
+        text-align: center;
+    } 
+       /* Container for Box2 and Box3 - right column */
+    .right-column {
+        flex: 1 1 calc(75% - 10px);
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        min-height: 100%;
+    }
+    /* Box2 styling - top right */
+    .box2 {
+        background-color: green;
+        color: white;
+        padding: 20px;
+        text-align: center;
+        flex: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    /* Box3 styling - bottom right */
+    .box3 {
+        background-color: rgba(194, 105, 26, 0.929);
+        color: white;
+        padding: 20px;
+        text-align: center;
+        flex: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .sidebar {
+        background-color: black;
+        color: white;
+        padding: 20px;
+        text-align: center;
+    }  
+     /* Media query for tablet screens (768px and below) */
+     @media (max-width: 768px) {
+        .main-content {
+            flex-direction: column;
+        }
+        .box1, .right-column {
+            flex: 1 1 100%;
+            min-height: auto;
+        }
+        .sidebar {
+            margin-top: 200px;
+            order: 2;
+        }
+    }
+    /* Media query for mobile screens (480px and below) */
+    @media (max-width: 480px) {
+        .box1, .box2, .box3 {
+            min-height: 80px;
+            padding: 15px;
+        }
+        .sidebar {
+            margin-top: 200px;
+            order: 2;
+        }
+    }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="main-content">
+            <div class="box1">Box1</div>
+            <div class="right-column">
+                <div class="box2">Box2</div>
+                <div class="box3">Box3</div>
+            </div>
+            <div class="sidebar">Box4</div>
+        </div>
+    </div>
+</body>
+</html>

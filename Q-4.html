@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q-4 and A-4</title>
+    <style>
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+            padding: 10px;
+            background-color: aquamarine;
+        }
+        .grid-item-1 {
+            background-color: red;
+            padding: 20px;
+            text-align: center;
+            min-height: 100px;
+        }
+        .grid-item-2 {
+            background-color: green;
+            padding: 20px;
+            text-align: center;
+            min-height: 100px;
+        }
+        .grid-item-3 {
+            background-color: blue;
+            padding: 20px;
+            text-align: center;
+            min-height: 100px;
+        }
+        .grid-item-4 {
+            background-color: rgba(194, 105, 26, 0.929);
+            padding: 20px;
+            text-align: center;
+            min-height: 100px;
+        }
+        @media (max-width: 500px) {
+            .grid-container {
+                display: grid;
+                grid-template-columns: 1fr;
+                gap: 20px;
+                padding: 20px;
+                background-color: #f5f5f5;
+                min-height: 100vh;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="grid-item-1">Box1</div>
+        <div class="grid-item-2">Box2</div>
+        <div class="grid-item-3">Box3</div>
+        <div class="grid-item-4">Box4</div>
+    </div>
+</body>
+</html>
